@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="TodoItems" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/TodoItems" Description="My List Instance">
+
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="ID">1</Field>
+          <Field Name="Title">Clean the garage</Field>
+          <Field Name="Comments">before noon</Field>
+          
+        </Row>
+        <Row>
+          <Field Name="ID">2</Field>
+          <Field Name="Title">Oil change</Field>
+          <Field Name="Comments">buy the filter</Field>
+
+        </Row>
+        <Row>
+          <Field Name="ID">3</Field>
+          <Field Name="Title">buy a grill</Field>
+          <Field Name="Comments"></Field>
+
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

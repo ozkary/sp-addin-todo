@@ -1,0 +1,31 @@
+﻿<form class="form" novalidate name="frmTodo">
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th >Title</th>
+                <th >Comments</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td></td>
+                <td><input  class="form-control" type="text" ng-model="ctrl.item.title" required /></td>
+                <td><input  class="form-control" type="text" required ng-model="ctrl.item.comments" /></td>
+                <td>
+
+                    <button type="button" class="btn btn-default" data-ng-disabled="frmTodo.$invalid" title="Add Item" ng-click="ctrl.addItem()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+            <tr data-ng-repeat="item in ctrl.list">
+                <td ng-bind="item.ID"></td>
+                <td ng-bind="item.Title"></td>
+                <td ng-bind="item.OData__Comments"></td>
+                <td></td>
+            </tr>
+        </tbody>
+
+    </table>
+</form>
