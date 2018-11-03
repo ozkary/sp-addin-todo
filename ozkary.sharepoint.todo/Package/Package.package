@@ -1,11 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package dslVersion="1.0.0.0" 
-        Id="89b741a0-4643-4cb0-b1d2-097e4689f0e3" 
-        solutionId="89b741a0-4643-4cb0-b1d2-097e4689f0e3" 
-        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
-        name="ozkary.sharepoint.todo"
-        sharePointProductVersion="16.0">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="89b741a0-4643-4cb0-b1d2-097e4689f0e3" solutionId="89b741a0-4643-4cb0-b1d2-097e4689f0e3" resetWebServer="false" sharePointProductVersion="16.0" name="Ozkary Todo Items" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <features>
-        <featureReference itemId="2e09e9a4-94b0-4e41-abf5-bd155a82d0d5" />
+    <featureReference itemId="2e09e9a4-94b0-4e41-abf5-bd155a82d0d5" />
   </features>
 </package>
