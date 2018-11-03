@@ -1,6 +1,6 @@
 # SharePoint add-in with Office 365 and AngularJS
 
-Use this project to get an intro at building an Angular component with SharePoint data list as backed. The integration
+Use this project to get an intro at building an Angular component with SharePoint data list as backend. The integration
 is done using SharePoint Rest APIs
 
 ## Getting Started
