@@ -8,7 +8,9 @@ Make sure to install the Office Development tools with Visual Studio.
 Also create an account on Office 365. 
 Create a developer site collection
 
-https://www.ozkary.com/2018/08/upload-sharepoint-sandbox-solution-to.html
+https://visualstudio.microsoft.com/vs/features/office-tools/
 
 https://developer.microsoft.com/en-us/office/dev-program
+
+https://www.ozkary.com/2018/08/upload-sharepoint-sandbox-solution-to.html
 
