@@ -10,23 +10,24 @@ is done using SharePoint Rest APIs
 
 ### Make sure to install the Office Development tools with Visual Studio.
 https://visualstudio.microsoft.com/vs/features/office-tools/
-<br/>
+<p>
 <img src="https://visualstudio.microsoft.com/wp-content/uploads/2016/06/Templates-1.png" alt="Visual Studio Office Tools"></a>
 
 ### Also create an account on Office 365
 https://developer.microsoft.com/en-us/office/dev-program
-<br/>
+<p>
 
 ### SharePoint service Reference
 https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service
-<br/>
+<p>
 <img src="https://docs.microsoft.com/en-us/sharepoint/dev/images/spf15con_rest_reststructure.png" alt="SharePoint REST service architecture"></img>
 
 
 ### Create a developer site collection on Office 365
 https://www.ozkary.com/2018/08/upload-sharepoint-sandbox-solution-to.html
+<p>
 
-## LIcensing
+## Licensing
 
 Copyright (c) 2011-2017 GitHub Inc.
 
@@ -38,8 +39,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ##  Stats
 
-GitHub issues:	https://img.shields.io/github/issues/ozkary/sp-addin-todo
-GitHub forks:	https://img.shields.io/github/forks/ozkary/sp-addin-todo
-GitHub stars:	https://img.shields.io/github/stars/ozkary/sp-addin-todo
-GitHub license:	https://img.shields.io/github/license/ozkary/sp-addin-todo
-Twitter:	https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fozkary%2Fsp-addin-todo
+<a href="https://github.com/ozkary/sp-addin-todo/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/ozkary/sp-addin-todo?style=plastic"></a><br/>
+<a href="https://github.com/ozkary/sp-addin-todo/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/ozkary/sp-addin-todo?style=plastic"></a><br/>
+<a href="https://github.com/ozkary/sp-addin-todo/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ozkary/sp-addin-todo?style=plastic"></a><br/>
+<a href="https://github.com/ozkary/sp-addin-todo"><img alt="GitHub license" src="https://img.shields.io/github/license/ozkary/sp-addin-todo?style=plastic"></a><br/>
+<a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fozkary%2Fsp-addin-todo"><img alt="Twitter" src="https://img.shields.io/twitter/url?style=social"></a><br/>

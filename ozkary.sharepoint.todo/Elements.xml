@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="RootModule">
-    <File Path="README.md" Url="README.md" ReplaceContent="TRUE" />
     <File Path="app.png" Url="app.png" ReplaceContent="TRUE" />
+    <File Path="README.md" Url="README.md" ReplaceContent="TRUE" />
+    <File Path="license.md" Url="license.md" ReplaceContent="TRUE" />
   </Module>
 </Elements>
