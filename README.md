@@ -27,6 +27,7 @@ https://developer.microsoft.com/en-us/graph
 <p>
 <img src="https://docs.microsoft.com/en-us/graph/images/microsoft-graph-dataconnect-connectors-rebrand-800.png" alt="Microsoft Graph"></img>
 <p>
+<img src="https://docs.microsoft.com/en-us/graph/images/microsoft-graph.png" alt="Microsoft Graph"></img>
 
 ### Create a developer site collection on Office 365
 https://www.ozkary.com/2018/08/upload-sharepoint-sandbox-solution-to.html
