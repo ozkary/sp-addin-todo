@@ -3,7 +3,5 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Type="ElementManifest" />
     <ProjectItemFile Source="app.png" Type="ElementFile" />
-    <ProjectItemFile Source="README.md" Type="ElementFile" />
-    <ProjectItemFile Source="license.md" Type="ElementFile" />
   </Files>
 </ProjectItem>

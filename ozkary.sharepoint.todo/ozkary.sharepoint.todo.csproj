@@ -42,6 +42,8 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="app.png" />
+    <Content Include="Elements.xml" />
     <Content Include="Lists\Elements.xml" />
     <Content Include="Lists\Sample.txt" />
     <Content Include="Lists\TodoItems\Elements.xml" />
@@ -66,6 +68,9 @@
     </None>
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bacbbcdb-bac8-429a-aa22-fd585f4cc0c5}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.9.1.min.map" />

@@ -2,7 +2,5 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="RootModule">
     <File Path="app.png" Url="app.png" ReplaceContent="TRUE" />
-    <File Path="README.md" Url="README.md" ReplaceContent="TRUE" />
-    <File Path="license.md" Url="license.md" ReplaceContent="TRUE" />
   </Module>
 </Elements>
