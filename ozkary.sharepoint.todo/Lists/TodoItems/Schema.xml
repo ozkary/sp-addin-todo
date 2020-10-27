@@ -5,15 +5,15 @@
       
       
     <ContentType ID="0x0100b975b95d6b91466ca7c94079f67a6ed0" Name="ListFieldsContentType">
-      <FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
-      <FieldRef ID="{52578FC3-1F01-4f4d-B016-94CCBCF428CF}" Name="_Comments" />
-      <FieldRef ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Name="AssignedTo" />
-    </FieldRefs></ContentType><ContentTypeRef ID="0x01">
+      <FieldRefs>
+      
+      
+    <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{52578FC3-1F01-4f4d-B016-94CCBCF428CF}" Name="_Comments" /><FieldRef ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Name="AssignedTo" /><FieldRef ID="{857ee5ac-7cfd-4271-946d-6f673b18c529}" Name="Area" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
         <Folder TargetName="Item" />
       </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
     <Fields>
       
-    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{52578FC3-1F01-4f4d-B016-94CCBCF428CF}" Name="_Comments" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_Comments" Group="$Resources:core,Document_Columns;" Type="Note" DisplayName="$Resources:core,Comments;" Sortable="FALSE" Description="$Resources:core,_CommentsDesc;" Sealed="TRUE" UnlimitedLengthInDocumentLibrary="TRUE" AllowDeletion="TRUE" ShowInFileDlg="FALSE" DelayActivateTemplateBinding="GROUP,SPSPERS,SITEPAGEPUBLISHING" /><Field ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Name="AssignedTo" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="AssignedTo" Group="$Resources:core,Issue_Task_Columns;" Type="User" List="UserInfo" DisplayName="$Resources:core,Assigned_To;" DelayActivateTemplateBinding="GROUP,SPSPERS,SITEPAGEPUBLISHING" /></Fields>
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{52578FC3-1F01-4f4d-B016-94CCBCF428CF}" Name="_Comments" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_Comments" Group="$Resources:core,Document_Columns;" Type="Note" DisplayName="$Resources:core,Comments;" Sortable="FALSE" Description="$Resources:core,_CommentsDesc;" Sealed="TRUE" UnlimitedLengthInDocumentLibrary="TRUE" AllowDeletion="TRUE" ShowInFileDlg="FALSE" DelayActivateTemplateBinding="GROUP,SPSPERS,SITEPAGEPUBLISHING" /><Field ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Name="AssignedTo" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="AssignedTo" Group="$Resources:core,Issue_Task_Columns;" Type="User" List="UserInfo" DisplayName="$Resources:core,Assigned_To;" DelayActivateTemplateBinding="GROUP,SPSPERS,SITEPAGEPUBLISHING" /><Field Name="Area" ID="{857ee5ac-7cfd-4271-946d-6f673b18c529}" DisplayName="Area" Type="Choice" Required="TRUE" Format="Dropdown" FillInChoice="FALSE"><CHOICES><CHOICE>Architecture</CHOICE><CHOICE>Back-end</CHOICE><CHOICE>Database</CHOICE><CHOICE>Design / Analysis</CHOICE><CHOICE>Documentation</CHOICE><CHOICE>Front-end</CHOICE><CHOICE>Quality</CHOICE><CHOICE>Security</CHOICE><CHOICE>Services</CHOICE></CHOICES></Field></Fields>
     <Views>
       
       
@@ -41,7 +41,7 @@
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
           
-        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="_Comments" /><FieldRef Name="AssignedTo" /></ViewFields>
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="_Comments" /><FieldRef Name="AssignedTo" /><FieldRef Name="Area" /></ViewFields>
         <Query>
           <OrderBy>
             

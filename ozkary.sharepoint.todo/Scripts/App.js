@@ -78,7 +78,8 @@ function initializePage()
                     "type": "SP.Data.TodoItemsListItem"
                 },
                 "Title": item.title,
-                "OData__Comments": item.comments
+                "OData__Comments": item.comments,
+                "Area": item.area
             }
 
             var request = $http({
