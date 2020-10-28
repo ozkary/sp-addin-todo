@@ -1,1 +1,55 @@
 ﻿/* Place custom styles below */
+#message {
+margin:30px;
+}
+
+todo-list {
+width:100%;
+}
+
+#s4-bodyContainer {
+width:100%;
+padding: 0 15px;
+margin: 0 auto;
+}
+
+.ms-core-pageTitle {
+    font-size: 2.25em;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 576px) {
+    #s4-bodyContainer {
+        max-width: 540px;
+    }
+
+    .ms-core-pageTitle {
+        font-size: 1em;      
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #s4-bodyContainer {
+        max-width: 720px;
+    }
+
+    .ms-core-pageTitle {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #s4-bodyContainer {
+        max-width: 960px;
+    }
+
+    .ms-core-pageTitle {
+        font-size: 1.75em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #s4-bodyContainer {
+        max-width: 1140px;
+    }
+}

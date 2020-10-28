@@ -13,7 +13,7 @@ https://visualstudio.microsoft.com/vs/features/office-tools/
 <p>
 <img src="https://visualstudio.microsoft.com/wp-content/uploads/2016/06/Templates-1.png" alt="Visual Studio Office Tools"></a>
 
-### Also create an account on Office 365
+### Create a free account on Office 365
 https://developer.microsoft.com/en-us/office/dev-program
 <p>
 
@@ -22,6 +22,12 @@ https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/get-to-know-the-share
 <p>
 <img src="https://docs.microsoft.com/en-us/sharepoint/dev/images/spf15con_rest_reststructure.png" alt="SharePoint REST service architecture"></img>
 
+### Microsoft Graph API
+https://developer.microsoft.com/en-us/graph
+<p>
+<img src="https://docs.microsoft.com/en-us/graph/images/microsoft-graph-dataconnect-connectors-rebrand-800.png" alt="Microsoft Graph"></img>
+<p>
+<img src="https://docs.microsoft.com/en-us/graph/images/microsoft-graph.png" alt="Microsoft Graph"></img>
 
 ### Create a developer site collection on Office 365
 https://www.ozkary.com/2018/08/upload-sharepoint-sandbox-solution-to.html
