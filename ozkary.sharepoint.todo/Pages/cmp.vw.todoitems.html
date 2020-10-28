@@ -14,9 +14,9 @@
                 <td></td>
                 <td><input class="form-control" type="text" ng-model="ctrl.item.title" required /></td>
                 <td><input class="form-control" type="text" required ng-model="ctrl.item.comments" /></td>
-                <td><input class="form-control" type="text" required ng-model="ctrl.item.area" /></td>
-                <td>
-                    <button type="button" class="btn btn-default" data-ng-disabled="frmTodo.$invalid" title="Add Item" ng-click="ctrl.addItem()">
+                <td><select class="form-control" required ng-model="ctrl.areas" /></td>
+                <td class="text-center">
+                    <button type="button" class="btn btn-primary" data-ng-disabled="frmTodo.$invalid" title="Add Item" ng-click="ctrl.addItem()">
                         Add
                     </button>
                 </td>
@@ -26,13 +26,13 @@
                 <td ng-bind="item.Title"></td>
                 <td ng-bind="item.OData__Comments"></td>
                 <td ng-bind="item.Area"></td>
-                <td>
-                    <a href="#" onclick="alert('not implemented')"
-                       <i class="fa fa-pencil"></i>
+                <td class="text-center">
+                    <a href="#" onclick="alert('not implemented')">
+                       <i class="fa fa-pencil text-default"></i>
                     </a>
 
-                    <a href="#" onclick="alert('not implemented')"
-                    <i class="fa fa-trash"></i>
+                    <a href="#" onclick="alert('not implemented')">
+                    <i class="fa fa-trash text-danger"></i>
                     </a>
                 </td>
             </tr>
