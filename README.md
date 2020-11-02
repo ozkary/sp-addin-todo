@@ -53,7 +53,7 @@ https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/get-to-know-the-share
 <img src="https://docs.microsoft.com/en-us/sharepoint/dev/images/spf15con_rest_reststructure.png" alt="SharePoint REST service architecture"></img>
 <p>
 
-#### Working with Lists (CRUD AI Calls)
+#### Working with Lists (CRUD API Calls)
 
 https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/working-with-lists-and-list-items-with-rest
 
