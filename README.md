@@ -6,6 +6,36 @@ is done using SharePoint Rest APIs
 ## Demo Angular App
 <img src="app.png" alt="Demo SharePoint App">
 
+### Getting the Security Token
+
+```javascript
+    /**
+    * gets the security token
+    **/
+    const token = () => {
+                      
+        const url = "../_api/contextinfo";
+
+        $http({
+            method: 'POST',
+            url: url,
+            headers: {
+                'Content-Type': 'application/json;odata=verbose',
+                'Accept': 'application/json;odata=verbose'
+            }
+        }).then(function success(resp) {
+            var data = resp.data.d.GetContextWebInformation;                
+            authToken = {};
+            authToken.name = 'X-RequestDigest';
+            authToken.value = data['FormDigestValue'];
+                
+        }, function error(resp) {
+            console.log(resp);
+        });            
+            
+    }
+```
+
 ## Getting Started
 
 ### Make sure to install the Office Development tools with Visual Studio.
@@ -21,6 +51,43 @@ https://developer.microsoft.com/en-us/office/dev-program
 https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service
 <p>
 <img src="https://docs.microsoft.com/en-us/sharepoint/dev/images/spf15con_rest_reststructure.png" alt="SharePoint REST service architecture"></img>
+<p>
+
+#### Working with Lists (CRUD API Calls)
+
+https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/working-with-lists-and-list-items-with-rest
+
+``` javascript
+     /**
+    * Adds a new item to the list
+    * @param {object} item
+    */
+    const addItem = (item) => {
+
+        const data = {
+            "__metadata": {
+                "type": "SP.Data.TodoItemsListItem"
+            },
+            "Title": item.title,
+            "OData__Comments": item.comments,
+            "Area": item.area
+        }
+
+        const request = $http({
+            method: 'POST',
+            url: url,
+            headers: {
+                'Content-Type': 'application/json;odata=verbose',
+                'Accept': 'application/json;odata=verbose',
+                'X-RequestDigest': authToken.value
+            },
+            data: JSON.stringify(data)
+        });
+
+        return request;
+    } 
+
+```
 
 ### Microsoft Graph API
 https://developer.microsoft.com/en-us/graph
