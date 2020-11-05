@@ -1,7 +1,7 @@
 # Bootcamp Solution instructions
 
 ## SharePoint Platform
-### Build Share Point Data List
+### Build SharePoint Data List
 
 ## Power Platform
 ### Update the SharePoint forms with Powerapps
@@ -22,7 +22,7 @@ Set(
     "Product Tasks"
 );
 ```
-- Set each screen LblAppName to AppName
+- On each screen set LblAppName.Text to AppName
 
 ### Customize the Gallery
 
@@ -30,8 +30,8 @@ Set(
   - Set Body = ThisItem.Task Date
   - Set Title = ThisItem.Title
   - Set Subtitle = ThisItem.Area.Value
-  - Upload the images from the Media section
-  - Add the following on the app OnStart event
+  - Upload the images from the Media section (Left Menu)
+  - Add the following to the app OnStart event
 ```javacript
 ClearCollect(
     AreaColors,
@@ -52,8 +52,8 @@ ClearCollect(
     }
 );
 ```
- - Save & exit the app to load the global context variable
- - Edit the app and set Subtitle Color to the following:
+  - Save & exit the app to load the global context variable
+  - Edit the app and set Subtitle Color to the following:
  ```javascript
  ColorValue(
     If (
@@ -73,17 +73,18 @@ ClearCollect(
     )
 )
  ```
-- On the BrowseScreen Gallery add the follwing to the image property
-```
+ - On the BrowseScreen Gallery add the following to the image property
+```javascript
 LookUp(
     AreaColors,
     Name = ThisItem.Area.Value,
     Image
 )
-```javascript
-### Add Notification message
 ```
-// EditScreen EditForm OnSuccessEvent
+### Add Notification message
+- Add the following to the EditScreen EditForm OnSuccessEvent
+```
+// 
 Notify(
     "Update is complete".
     NotificationType.Success
@@ -112,22 +113,27 @@ ClearCollect(
 - Add component from the components tab
 - Set size 350 / 640
 - Add Custom property 
- - Name: Items
- - Input type
- - Table data type
+  - Name: Items
+  - Input type
+  - Table data type
 - Add gallery control to the component
--- Set layout to Image and title
--- Set Image to ThisItem.Image
--- Set Text to ThisItem.Name
--- Set Arrow OnSelect to 
-```Navigate(ThisItem.Screen)```
--- Set Items Parent.Items
+  - Set layout to Image and title
+  - Set Image to ThisItem.Image
+  - Set Text to ThisItem.Name
+  - Set Arrow OnSelect to 
+```javascript 
+Navigate(ThisItem.Screen)
+```
+  - Set Items Parent.Items
 ####  Add  Component to Browse Screen
--- Insert (Plus Icon on Left Bar) component to Canvas
--- Set Height to RectQuickActionBar.Height
--- Set Visible to showMenu context variable
--- on BrowseScreen OnVisible event set context variable to false 
-```UpdateContext({showMenu: false})```
+  - Insert (Plus Icon on Left Bar) the component to BrowseScreen Canvas
+  - Set Height to RectQuickActionBar.Height
+  - Set Visible to showMenu context variable
+  - on BrowseScreen OnVisible event set context variable to false 
+```javascript
+UpdateContext({showMenu: false})
+```
+  - From the tree view, right click the component and click on Bring to Front (z-index)
 
 ## Power Virtual Agent
 
