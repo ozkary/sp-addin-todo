@@ -27,7 +27,7 @@
 
 <%-- The markup in the following Content element will be placed in the TitleArea of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">
-   Global Office 365 Bootcamp - Todo Task List
+   Global Microsoft 365 Bootcamp - Product Log
 </asp:Content>
 
 <%-- The markup and script in the following Content element will be placed in the <body> of the page --%>

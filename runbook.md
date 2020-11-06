@@ -3,7 +3,7 @@ Follow this runbook to complete all the development tasks.
 
 ## SharePoint Platform
 ### Build SharePoint Data List
-- Navigate to the me site
+- Navigate to the main site
 - Click on Site Content
 - Click on New App
 - Click Custom List
