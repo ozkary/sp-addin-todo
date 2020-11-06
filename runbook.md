@@ -87,7 +87,7 @@ Follow this runbook to complete all the development tasks.
   - Center the cards and tasks by area charts
   - Make the chart width about 600
 
-### Publish the char online
+### Publish the report online
 - Save the file as ProductLog
 - Click on publish
 - Select my workspace
@@ -125,7 +125,7 @@ Set(
   - Set Subtitle = ThisItem.Area.Value
   - Upload the images from the Media section (Left Menu)
   - Add the following to the app OnStart event
-```javacript
+```javascript
 ClearCollect(
     AreaColors,
     {
