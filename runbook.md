@@ -5,12 +5,11 @@ Follow this runbook to complete all the development tasks.
 ### Build SharePoint Data List
 - Navigate to the main site
 - Click on Site Content
-- Click on New App
-- Click Custom List
+- Click on New List
 - Name the list ProductLog
 ### Add fields and properties
 - TaskDate
-  - Date/Time, required, date only
+  - Date/Time, required, date only (do not use time)
 - Area
   - Choice, required, drop-down menu
    - Choices = Architecture Design Front-end Quality (separate line)
@@ -27,7 +26,7 @@ Follow this runbook to complete all the development tasks.
 
 ### Create a process flow with Power Automate
 - From the list view, click on Automate, Power Automate, create flow
-- Select When a new item is added in SharePointm complete a custom action
+- Select When a new item is added in SharePoint complete a custom action
 - Review the permissions and press continue 
 - Confirm the site and list names
 - Add a new step
@@ -35,8 +34,9 @@ Follow this runbook to complete all the development tasks.
 - Click on Post a Message
   - Set the team name
   - Set the channel name
+    - Create a team channel and there is none and try this again
   - Set the subject and message information selecting Title, Area.Value and TaskDate from the dynamic fields
-  - Save and test the flow by adding new records and wait for the messages to show on the Teams' channel
+  - Save and test the flow by adding new records from SharePoint and wait for the messages to show on the Team channel
 
 ## PowerBI Dashboard
 ### Connect to the Data Source
@@ -186,10 +186,19 @@ Notify(
 - Add a new screen
   - Duplicate the detail screen or add a blank screen and add the controls manually
   - Delete the detail form
-  - Set LblAppName width to ```javascript  Parent.Width - Self.X ```
-  - Set LblAppName text to ```javascript  AppName & " Summary" ```
+  - Set LblAppName width
+  ```javascript  
+  Parent.Width - Self.X 
+  ```
+  - Set LblAppName text
+  ```javascript  
+  AppName & " Summary" 
+  ```
   - Delete the edit and delete icons
-  - Make sure the back arrow OnSelect is set to ```javascript Navigate(BrowseScreen1, ScreenTransition.None)```
+  - Make sure the back arrow OnSelect is set to 
+  ```javascript 
+  Navigate(BrowseScreen1, ScreenTransition.None)
+  ```
 - Add the chart control
   - From the Charts menu (top) select PowerBI Tile
   - Set the chart height and width to fill the screen  
@@ -231,20 +240,26 @@ ClearCollect(
 - Add gallery control to the component
   - Set layout to Image and title
   - Set Image to ThisItem.Image
-  - Set Text to ThisItem.Name
-  - Set Arrow OnSelect to 
+  - Set Title Text to ThisItem.Name
+  - Set NextArrow OnSelect to 
 ```javascript 
 Navigate(ThisItem.Screen)
 ```
   - Set Items Parent.Items
 ####  Add Component to the Browse Screen
   - Insert (Plus Icon on Left Bar) the component to BrowseScreen Canvas
-  - Set Height to RectQuickActionBar.Height
+  - Set cmpMenu.Items to Menu object
+  - Set Y to RectQuickActionBar.Height
+  - Set Height to App.Height -  Self.Y
   - Set Visible to showMenu context variable
   - on BrowseScreen OnVisible event set context variable to false 
 ```javascript
 UpdateContext({showMenu: false})
 ```
+  - Insert a Hamburger icon to the left of the screen title and set the OnSelect event to 
+  ```javascript
+  UpdateContext({showMenu: !showMenu})
+  ```
   - From the tree view, right click the component and click on Bring to Front (z-index)
 
 ### Publish and install the app
