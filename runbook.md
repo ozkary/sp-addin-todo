@@ -12,8 +12,7 @@ Follow this runbook to complete all the development tasks.
   - Date/Time, required, date only (do not use time)
 - Area
   - Choice, required, drop-down menu
-   - Choices = Architecture Design Front-end Quality (separate line)
-- Load the application from the Site Content menu and click on ProductLog
+   - Choices = Architecture, Design, Front-end, Quality
 - Enter a few items with different dates and areas
 
 ## Power Platform 
