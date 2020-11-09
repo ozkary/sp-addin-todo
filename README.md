@@ -1,4 +1,4 @@
-# SharePoint Add-in with Office 365 and AngularJS
+# SharePoint Add-in with Office 365 and Angular
 
 Use this project to get an intro at building an Angular component with SharePoint data list as backend. The integration
 is done using SharePoint Rest APIs
@@ -45,6 +45,15 @@ https://visualstudio.microsoft.com/vs/features/office-tools/
 <p>
 <img src="ozkary-sp-app.png" alt="Visual Studio Project"></a>
 
+
+### Project Packages to import into Microsoft 365 tenant
+
+- ProductLog_Powerbi.pbix   PowerBI Solution
+- ProductLog_Chatbot.zip    Power Virtual Agent Sample
+- ProductLog_PowerApps.zip  PowerApp Sample
+<p>
+After importing the projects make sure to update the connection to match your SharePoint tenant url and data list.
+<p>
 
 ### Create a free account on Office 365
 https://developer.microsoft.com/en-us/office/dev-program
