@@ -54,7 +54,6 @@ https://visualstudio.microsoft.com/vs/features/office-tools/
 <p>
 After importing the projects make sure to update the connection to match your SharePoint tenant url and data list.
 <p>
-<iframe src="https://onedrive.live.com/embed?cid=3DDB1F0F5F8E9724&resid=3DDB1F0F5F8E9724%213272&authkey=AKh8qz3MqhFMl5o&em=2" width="780" height="550" frameborder="0" scrolling="no"></iframe>
 
 ### Create a free account on Office 365
 https://developer.microsoft.com/en-us/office/dev-program
