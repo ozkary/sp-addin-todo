@@ -54,7 +54,7 @@ https://visualstudio.microsoft.com/vs/features/office-tools/
 <p>
 After importing the projects make sure to update the connection to match your SharePoint tenant url and data list.
 <p>
-#### Presentation
+### Presentation
 
 https://www.ozkary.com/2020/11/microsoft-365-power-platform-overview.html
 
