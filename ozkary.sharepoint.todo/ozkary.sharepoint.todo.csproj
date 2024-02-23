@@ -8,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ozkary.sharepoint.todo</RootNamespace>
     <AssemblyName>ozkary.sharepoint.todo</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetOfficeVersion>16.1</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -21,6 +21,7 @@
     <WorkflowPartId>{e94ccec0-037d-4fc0-ba08-d442a24a1931}</WorkflowPartId>
     <CspkgPartId>{be303a63-9e07-4d7f-8ac1-b51bfc10a65c}</CspkgPartId>
     <SqlPackagePartId>{95d4bf8f-51ba-4d28-a5bb-f0154b7797de}</SqlPackagePartId>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
